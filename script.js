@@ -7,7 +7,7 @@ const weatherData = {
     humidity: "65%",
     wind: "8 km/h",
     timezone: "Asia/Jakarta",
-    video: "jakarta.mp4"
+    video: "Jakarta.mp4"
   },
   balikpapan: {
     temperature: 27,
@@ -102,4 +102,5 @@ function capitalize(str) {
 }
 
 window.onload = showWeather;
+
 
