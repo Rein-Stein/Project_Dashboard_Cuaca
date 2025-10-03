@@ -1,14 +1,5 @@
 // Data dummy cuaca
 const weatherData = {
-  samarinda: {
-    temperature: 28,
-    condition: "Mendung",
-    desc: "Langit mendung, udara lembap.",
-    humidity: "70%",
-    wind: "5 km/h",
-    timezone: "Asia/Makassar",
-    video: "samarinda.mp4"
-  },
   jakarta: {
     temperature: 30,
     condition: "Cerah Berawan",
@@ -36,15 +27,6 @@ const weatherData = {
     timezone: "Asia/Makassar",
     video: "sulawesi.mp4"
   },
-  papua: {
-    temperature: 26,
-    condition: "Berawan",
-    desc: "Cerah berawan, sejuk.",
-    humidity: "75%",
-    wind: "6 km/h",
-    timezone: "Asia/Jayapura",
-    video: "papua.mp4"
-  },
   // Tambahan kota luar negeri
   "new york": {
     temperature: 12,
@@ -63,15 +45,6 @@ const weatherData = {
     wind: "7 km/h",
     timezone: "Europe/Paris",
     video: "paris.mp4"
-  },
-  london: {
-    temperature: 3,
-    condition: "Bersalju",
-    desc: "Salju cukup lebat di beberapa area.",
-    humidity: "88%",
-    wind: "9 km/h",
-    timezone: "Europe/London",
-    video: "london.mp4"
   }
 };
 
@@ -129,3 +102,4 @@ function capitalize(str) {
 }
 
 window.onload = showWeather;
+
