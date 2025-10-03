@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo"></video>
+
+  <div class="dashboard">
+    <!-- Panel Kiri -->
+    <div class="card left">
+      <div class="logo">WD</div>
+      <h2>Weather Dashboard</h2>
+      <p>Pilih kota untuk melihat cuaca & waktu (data dummy).</p>
+
+      <select id="citySelect">
+        <option value="samarinda">Samarinda</option>
+        <option value="jakarta" selected>Jakarta</option>
+        <option value="balikpapan">Balikpapan</option>
+        <option value="sulawesi">Sulawesi</option>
+        <option value="papua">Papua</option>
+        <option value="new york">New York</option>
+        <option value="paris">Paris</option>
+        <option value="london">London</option>
+      </select>
+
+      <button onclick="showWeather()">Tampilkan Cuaca</button>
+    </div>
+
+    <!-- Panel Kanan -->
+    <div class="card right" id="result">
+      <h2>Jakarta</h2>
+      <div class="time" id="time">--:--:--</div>
+      <div class="temp">30°C</div>
+      <p class="condition">Cerah Berawan</p>
+      <p class="desc">Deskripsi: Cerah sebagian, angin sepoi-sepoi.</p>
+      <div class="extra">
+        <span>Humidity: 65%</span>
+        <span>Angin: 8 km/h</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

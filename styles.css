@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background Video */
+#bgVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%) scale(0.8); /* scale 1 = normal, <1 zoom out */
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/* Dashboard */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(0,0,0,0.7);
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 250px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* Left Panel */
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #1de9b6;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.left select, .left button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.left select {
+  width: 100%;
+}
+
+.left button {
+  background: #004d40;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left button:hover {
+  background: #00796b;
+}
+
+/* Right Panel */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.temp {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1de9b6;
+}
+
+.condition {
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.extra {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
